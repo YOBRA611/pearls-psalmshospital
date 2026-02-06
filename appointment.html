@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--favicon-->
+    <link rel="icon" href="logo/WhatsApp Image 2026-01-28 at 15.57.37.jpeg">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <title>Book Appointment - Pearls & Psalms Hospital</title>
+</head>
+<style>
+/*heros about*/
+.hero-appoint{
+    background: url(image/15fec9b93c747daac93d2d646a98c68aEdited.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+.appointment-wrapper {
+  padding: 60px 0;
+}
+
+.appointment-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+}
+
+/* LEFT */
+.appointment-left {
+  flex: 2;
+}
+
+.appointment-left h3 {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.top-label {
+  font-size: 15px;
+  color: #777;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.department {
+  font-size: 15px;
+  width: 100%;
+  height: 42px;
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+/* FORM */
+.appointment-form .form-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 22px;
+}
+
+.appointment-form .form-row.full {
+  flex-direction: column;
+}
+
+.form-field {
+  flex: 1;
+}
+
+.form-field label {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-field span {
+  color: #aaa;
+  font-size: 15px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  height: 42px;
+  border: 1px solid #e2e2e2;
+  padding: 0 12px;
+}
+
+.form-field textarea {
+  height: 120px;
+  padding-top: 10px;
+}
+
+.radio-group {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.radio-group label {
+  font-size: 15px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.submit-btn {
+  background: #0C3BC7;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 12px 35px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background: transparent;
+  color: #000000;
+  border: 1px solid black;
+}
+
+/* RIGHT */
+.appointment-right {
+  flex: 1;
+}
+
+.appointment-right h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.appointment-right h4 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.appointment-right p {
+  font-size: 15px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.info-box {
+  background: #eef6f9;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.info-box i {
+  color: #42b7d8;
+}
+.info-box a{
+  color: #3b3b3b;
+}
+.info-box a:hover{
+  color: #061415;
+}
+
+.appointment-right ul {
+  padding-left: 18px;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 7px;
+}
+.appointment-right ul i{
+    margin-right: 10px;
+    font-size: 15px;
+    color: #0C3BC7;
+}
+.healthy {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #151718;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .appointment-container {
+    flex-direction: column;
+  }
+
+  .appointment-form .form-row {
+    flex-direction: column;
+  }
+}
+</style>
+<body>
+    <!--scrollbutton-->
+    <div id="progress">
+        <span id="progress-value">&#9651</span>
+    </div>
+    <!--top-footer-->
+    <section class="top-footer">
+        <div class="box">
+            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="text-1">
+                    <p>Emergency line:  <a href="">+ (200) 0760 0760</a></p>
+                </div>
+            <div class="social-link-list">
+                <a href="" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+            </div>           
+        </div>
+    </section>
+    <header>
+        <!-- WhatsApp Chat Button -->
+        <a href="https://wa.me/?text=Pearls%20&%20Psalms%20Hospital" 
+            class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+            <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat">
+        </a>
+
+        <div class="logo-wrapper">
+            <img src="logo/WhatsApp Image 2026-01-28 at 15.57.37.jpeg" class="logo">
+        </div>
+
+
+        <div class="menuToggle"></div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Services 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Early Detection & Preventive Healthcare</a></li>
+                        <li><a href="#">Diagnosing & Addressing Behaviour Problems</a></li>
+                        <li><a href="#">Emergency & Critical Care Services </a></li>
+                        <li><a href="#">Safe and Effective Pain Management</a></li>
+                        <li><a href="#">Laboratory Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="department.html">Departments</a></li>
+                <li><a href="appointment.html">Appointments</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--heros about-->
+    <section class="hero-appoint">
+        <div class="content">
+            <h2>Appointments</h2>
+            <p>Pearls-psalms hospital</p>
+        </div>
+    </section>
+    <!--appointment form-->
+    <section class="appointment-wrapper">
+        <div class="appointment-container">
+
+        <!-- LEFT SIDE -->
+        <div class="appointment-left">
+            <h3>Appointment Form</h3>
+
+            <label class="top-label">Select a Department</label>
+            <select class="department">
+            <option>Gynaceology</option>
+            <option>Outpatient</option>
+            <option>Laboratory</option>
+            <option>Pediatrics</option>
+            </select>
+
+            <!-- HIGHLIGHTED FORM -->
+            <div class="appointment-form">
+
+            <div class="form-row">
+                <div class="form-field">
+                <label>Your First Name <span>(required)</span></label>
+                <input type="text">
+                </div>
+
+                <div class="form-field">
+                <label>Your Last Name <span>(required)</span></label>
+                <input type="text">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-field">
+                <label>Date of Birth <span>(required)</span></label>
+                <input type="date">
+                </div>
+
+                <div class="form-field">
+                <label>Sex <span>(required)</span></label>
+                <div class="radio-group">
+                    <label><input type="radio" name="sex"> Male</label>
+                    <label><input type="radio" name="sex"> Female</label>
+                    <label><input type="radio" name="sex"> Child</label>
+                </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-field">
+                <label>Your Email <span>(required)</span></label>
+                <input type="email">
+                </div>
+
+                <div class="form-field">
+                <label>Phone <span>(required)</span></label>
+                <input type="tel">
+                </div>
+            </div>
+
+            <div class="form-row full">
+                <div class="form-field">
+                <label>Your Message <span>(required)</span></label>
+                <textarea></textarea>
+                </div>
+            </div>
+
+            <button class="submit-btn">SUBMIT</button>
+
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="appointment-right">
+            <h3>Book an Appointment</h3>
+            <p>
+            Scheduling your hospital visit has never been easier. Use the form below 
+            to book an appointment with our medical professionals and 
+            receive timely, reliable, and compassionate care tailored to your needs.
+            </p>
+
+            <div class="info-box">
+            <i class="fa fa-phone"></i>
+            <span>Phone : +254(0)793444333</span>
+            </div>
+
+            <div class="info-box">
+            <i class="fa fa-envelope"></i>
+            <span>Email : pearls.psalms@gmail.com</span>
+            </div>
+
+            <div class="info-box">
+            <i class="fa fa-pen"></i>
+            <span>Online Form : <a href="#">Fill out this form</a></span>
+            </div>
+
+            <h4>After Booking</h4>
+            <p>
+            Hi fill in the details and submit the form. We will contact you
+            via phone or email and fix a time schedule.
+            <br>
+            These are the thing you need to carry with you when you come in 
+            for the appointment wit the doctor.
+            </p>
+
+            <ul>
+            <li><i class="fa-solid fa-circle-arrow-right"></i>Previous Medical History</li>
+            <li><i class="fa-solid fa-circle-arrow-right"></i>Enlisted Previous Numbers</li>
+            <li><i class="fa-solid fa-circle-arrow-right"></i>Discussion with Parents</li>
+            <li><i class="fa-solid fa-circle-arrow-right"></i>Make sure you are feeling good</li>
+            <li><i class="fa-solid fa-circle-arrow-right"></i>Have someone with you</li>
+            </ul>
+
+            <strong class="healthy">Have a healthy life!</strong>
+        </div>
+
+        </div>
+    </section>
+    <!--footer section-->
+    <footer>
+        <div class="footer-col">
+            <h2>Opening Hours</h2>
+            <ul>
+                <li><span>Monday - Friday: 24 hours</span></li>
+                <li><span>Saturday: 24 hours</span></li>
+                <li><span>Sunday: 24 hours</span></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h2>Quick Links</h2>
+            <ul class="list">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h2>Contact Us</h2>
+            <p>Email: info@pearls-psalmshospital.com</p>
+            <p>Phone: + (200) 0760 0760</p>
+            <p>Address: Kakamega, Kenya</p>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy;2026 Pearls & Psalms Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+    <!--crafted-->
+    <section class="bottom-footer">
+        <div class="craft">
+            <p>Crafted @  <a href="https://wa.me/254700073919?text=Hello%20I%20am%20interested%20in%20your%20services">Brydex Technologies</a></p>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1500, once: true });
+
+        const menuToggle = document.querySelector('.menuToggle');
+        const header = document.querySelector('header');
+        const dropdowns = document.querySelectorAll('.dropdown');
+
+        // Mobile menu toggle
+        menuToggle.addEventListener('click', e => {
+            e.stopPropagation();
+            header.classList.toggle('active');
+        });
+
+        // Mobile dropdown toggle
+        dropdowns.forEach(dropdown => {
+            const btn = dropdown.querySelector('.dropbtn');
+            const content = dropdown.querySelector('.dropdown-content');
+
+            btn.addEventListener('click', e => {
+                // Only mobile (<=900px)
+                if (window.innerWidth > 900) return;
+
+                e.preventDefault();
+                e.stopPropagation();
+
+                // Close other dropdowns
+                dropdowns.forEach(d => {
+                    if (d !== dropdown) d.classList.remove('active');
+                });
+
+                // Toggle this dropdown
+                dropdown.classList.toggle('active');
+            });
+        });
+
+        // Close dropdowns & mobile menu when clicking outside
+        document.addEventListener('click', e => {
+            if (window.innerWidth <= 900) {
+                dropdowns.forEach(d => d.classList.remove('active'));
+                header.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 900) {
+                    dropdowns.forEach(d => d.classList.remove('active'));
+                    header.classList.remove('active');
+                }
+            });
+        });
+
+        // Reset on resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 900) {
+                dropdowns.forEach(d => d.classList.remove('active'));
+                header.classList.remove('active');
+            }
+        });
+
+
+
+        let calcScrollValue = () => {
+        let scrollProgress = document.getElementById("progress");
+        let progressValue = document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrollValue = Math.round((pos * 100)/calcHeight);
+            if (pos > 100) {
+                scrollProgress.style.display = "grid";
+            } else {
+                scrollProgress.style.display = "none";
+            }
+            scrollProgress.addEventListener("click", () => {
+                document.documentElement.scrollTop = 0;
+            });
+            scrollProgress.style.background = `conic-gradient(#38bdf8 ${scrollValue}%, white ${scrollValue}%)`;
+        };
+
+        window.onscroll = calcScrollValue;
+        window.onload = calcScrollValue;
+    </script>
+</body>
+</html>
